@@ -1,99 +1,117 @@
-# DIC1 Shop - Boutique E-commerce Django
+# DIC1 Shop - Django E-commerce Platform
 
-Une plateforme de commerce électronique moderne développée avec Django, offrant une expérience d'achat complète pour les produits électroniques et technologiques.
+A modern e-commerce platform built with Django, providing a complete shopping experience for electronic and tech products.
 
 ## Description
 
-DIC1 Shop est une boutique en ligne spécialisée dans la vente de produits électroniques et technologiques. La plateforme permet aux utilisateurs de parcourir un large catalogue de produits, gérer leur panier d'achat, passer des commandes et suivre leurs livraisons.
+DIC1 Shop is an online store specializing in electronic and technology products.
+The platform allows users to browse a wide product catalog, manage their shopping cart, place orders, and track deliveries.
 
-## Fonctionnalités
+## Features
 
-### Interface Utilisateur
-- **Inscription et Connexion** : Système d'authentification complet
-- **Catalogue de Produits** : Navigation par catégories avec recherche avancée
-- **Panier d'Achat** : Gestion des produits avec calcul automatique des totaux
-- **Profil Utilisateur** : Gestion des informations personnelles et historique des commandes
-- **Suivi de Commande** : Système de tracking des colis
+### User Interface
 
-### Catégories de Produits
-- Ordinateurs et ordinateurs portables
-- Téléphones intelligents
-- Casques de musique et accessoires audio
-- Accessoires informatiques et mobiles
-- Appareils photo et équipements photo
-- Télévisions et électroménager
-- Consoles de jeu
-- Montres et accessoires
-- GPS et navigation
-- Technologies portables
+* **Authentication System**: User registration and login
+* **Product Catalog**: Category-based browsing with advanced search
+* **Shopping Cart**: Add/remove items with automatic total calculation
+* **User Profile**: Manage personal information and order history
+* **Order Tracking**: Track delivery status
 
-### Fonctionnalités Avancées
-- **Système de Paiement Sécurisé** : Traitement sécurisé des transactions
-- **Gestion des Livraisons** : Plusieurs options de livraison disponibles
-- **Liste de Souhaits** : Sauvegarde des produits favoris
-- **Comparateur de Produits** : Comparaison côte à côte des caractéristiques
-- **Support Client** : Service d'assistance intégré
-- **Application Mobile** : Disponible sur Google Play Store et App Store
+### Product Categories
 
-## Technologies Utilisées
+* Computers and laptops
+* Smartphones
+* Headphones and audio accessories
+* Computer and mobile accessories
+* Cameras and photography equipment
+* TVs and home appliances
+* Gaming consoles
+* Watches and accessories
+* GPS and navigation devices
+* Wearable technologies
 
-- **Backend** : Django (Python)
-- **Frontend** : HTML5, CSS3, JavaScript
-- **Base de Données** : SQLite
-- **Authentification** : Django Auth System
-- **Gestion des Médias** : Django Media Files
-- **Interface Admin** : Django Admin
+### Advanced Features
+
+* **Secure Payment System**: Safe transaction processing
+* **Delivery Management**: Multiple shipping options
+* **Wishlist**: Save favorite products
+* **Product Comparison**: Side-by-side feature comparison
+* **Customer Support**: Integrated help system
+* **Mobile App**: Available on Google Play Store and App Store
+
+## Tech Stack
+
+* **Backend**: Django (Python)
+* **Frontend**: HTML5, CSS3, JavaScript
+* **Database**: SQLite
+* **Authentication**: Django Auth System
+* **Media Management**: Django Media Files
+* **Admin Interface**: Django Admin
+
+## Prerequisites
+
+* Python 3.8+
+* pip
+* virtualenv (recommended)
 
 ## Installation
 
-### Prérequis
-- Python 3.8+
-- pip
-- virtualenv (recommandé)
+### 1. Clone the repository
 
-### Étapes d'installation
-
-1. **Cloner le repository**
 ```bash
-git clone https://github.com/thiernodaoudaly/boutique-dic1.git
-cd dic1-shop
+git clone https://github.com/thiernodaoudaly/dic1-django-ecommerce-platform.git
+cd dic1-django-ecommerce-platform
 ```
 
-2. **Créer et activer un environnement virtuel**
+### 2. Create and activate a virtual environment
+
 ```bash
 python -m venv venv
-source venv/bin/activate  
+source venv/bin/activate
 ```
 
-3. **Installer les dépendances**
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Configuration de la base de données**
+### 4. Set up the database
+
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-5. **Créer un superutilisateur**
+### 5. Create a superuser
+
 ```bash
 python manage.py createsuperuser
 ```
 
-6. **Lancer le serveur de développement**
+### 6. Run the development server
+
 ```bash
 python manage.py runserver
 ```
 
+## Learning Outcomes
+
+* Backend web development with Django
+* Database design and management
+* Building scalable web applications
+* Structuring full-stack projects
+
 ## Contribution
 
-Les contributions sont les bienvenues ! Pour contribuer :
+Contributions are welcome!
 
-1. Fork le projet
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/nouvelle-fonctionnalite`)
-3. Committez vos changements (`git commit -am 'Ajout d'une nouvelle fonctionnalité'`)
-4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
-5. Créez une Pull Request
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
+## License
 
+This project is licensed under the MIT License.
