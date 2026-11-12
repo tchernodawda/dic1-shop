@@ -1,4 +1,4 @@
-# DIC1 Shop — Django E-commerce Platform
+# Django E-commerce Platform
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-**Full-stack e-commerce platform for tech products — custom user authentication with email verification, session-based cart, product catalog with category filtering, and a REST API layer.**
+**Full-stack e-commerce platform for tech products; custom user authentication with email verification, session-based cart, product catalog with category filtering, and a REST API layer.**
 
 </div>
 
@@ -18,14 +18,14 @@ DIC1 Shop is a Django e-commerce application covering the full shopping lifecycl
 
 ## Features
 
-- **Custom user model** — `AbstractBaseUser` with email as the login field, `MyAccountManager` for user/superuser creation, REST framework token generated on signup via `post_save` signal
-- **Email verification** — account activation link sent on registration (`uidb64` + token), with a separate password reset flow
-- **Product catalog** — browsing by category (slug-based URLs), product detail pages, stock and availability flags, brand field
-- **Full-text search** — `Q` objects querying `product_name` and `description`
-- **Session-based cart** — anonymous cart keyed by `session_key`, add/remove/decrement items, per-item subtotal (`price × quantity`)
-- **User dashboard** — profile view and settings page
-- **REST API** — `UserViewSet` (token auth) + `UserLogIn` endpoint, DRF browsable API at `/accounts/api/v1/`
-- **Django Admin** — full CRUD on all models
+- **Custom user model**: `AbstractBaseUser` with email as the login field, `MyAccountManager` for user/superuser creation, REST framework token generated on signup via `post_save` signal
+- **Email verification**: account activation link sent on registration (`uidb64` + token), with a separate password reset flow
+- **Product catalog**: browsing by category (slug-based URLs), product detail pages, stock and availability flags, brand field
+- **Full-text search**: `Q` objects querying `product_name` and `description`
+- **Session-based cart**: anonymous cart keyed by `session_key`, add/remove/decrement items, per-item subtotal (`price × quantity`)
+- **User dashboard**: profile view and settings page
+- **REST API**: `UserViewSet` (token auth) + `UserLogIn` endpoint, DRF browsable API at `/accounts/api/v1/`
+- **Django Admin**: full CRUD on all models
 
 ## Project Structure
 
@@ -88,7 +88,7 @@ dic1-shop/
 
 ```bash
 # Clone the repository
-git clone https://github.com/thiernodaoudaly/dic1-shop.git
+git clone https://github.com/tchernodawda/dic1-shop.git
 cd dic1-shop
 
 # Create and activate a virtual environment
@@ -132,4 +132,4 @@ EMAIL_HOST_PASSWORD = 'your-app-password'
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+See [LICENSE](LICENSE) for details.
